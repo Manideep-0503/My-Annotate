@@ -1,0 +1,37 @@
+{
+    "manifest_version": 3,
+    "name": "My Annotate",
+    "version":"0.0.1",
+    "options_page": "options.html",
+    "description":"A Chrome extension for annotating web page",
+    "permissions": [
+        "activeTab",
+        "storage",
+        "tabs"
+    ],
+    "background": {
+        "service_worker":"background.js"
+    },
+    "action":{
+        "default_popup":"pop_up.html"
+    },
+    "options_ui":{
+        "page":"options.html",
+        "open_in_tab":false,
+        "js":["options.js"]
+    },
+    "content_scripts":[
+        {
+            "matches":["https://*/*"],
+            "js":["content.js","options.js"],
+            "css":["styles.css"]
+        }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["options.html", "images/*", "styles/*"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+}
+

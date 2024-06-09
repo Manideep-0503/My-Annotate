@@ -1,0 +1,133 @@
+/* Hidden class to initially hide the confirmation message */
+.hidden {
+    display: none;
+}
+
+/* Styling for the confirmation message */
+#confirmation-message {
+    color: green;
+    font-weight: bold;
+}
+
+/* Tooltip for notes */
+.note-tooltip {
+    position: absolute;
+    background: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1000;
+    pointer-events: none;
+    font-size: 12px;
+    max-width: 200px;
+    word-wrap: break-word;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Note button */
+.note-button {
+    position: absolute;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Note dialog */
+.note-dialog {
+    position: absolute;
+    width: 300px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    z-index: 1000;
+    text-align: center;
+}
+
+#note-textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#save-note-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+.highlight:hover .note-tooltip {
+    display: block; /* Show tooltip on hover */
+}
+
+
+.floating-toolbar {
+    position: absolute;
+    display: flex;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.floating-toolbar button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.floating-toolbar button:hover {
+    background: #0056b3;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;;
+}
+
+button:focus {
+    outline: none;
+}

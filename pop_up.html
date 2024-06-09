@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Annotate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color:#007bff;
+        }
+
+        button:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Annotate</h1>
+    <p>Click on text to highlight</p>
+    <button id="options-btn">Choose Color</button>
+    <button id="loadAnnotations">Load Previous Annotations</button>
+    <button id="exportButton">Export</button>
+    <button id="saveButton">Save</button>
+    <script src="popup.js"></script>
+</body>
+</html>
